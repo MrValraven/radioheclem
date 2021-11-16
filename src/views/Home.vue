@@ -1,25 +1,25 @@
 <template>
-  <section :style="{ background: getImgURL('radio.jpg') }"></section>
-  <div class="card">
-    <h1>Radio Heclem</h1>
-    <p>Disponível em breve</p>
-    <div class="socials">
-      <i class="fab fa-instagram">
+  <section :style="{ background: getImgURL('radio.jpg') }">
+    <div class="card">
+      <h1>Rádio HECLEM</h1>
+      <p>Disponível em breve</p>
+      <div class="socials">
         <a
           href="https://www.instagram.com/radioheclem/"
           target="_blank"
           rel="noopenner noreferrer"
-        ></a>
-      </i>
-      <i class="fab fa-facebook-square">
+          ><i class="fab fa-instagram"></i>
+        </a>
+
         <a
           href="https://www.facebook.com/RadioHECLEM"
           target="_blank"
           rel="noopenner noreferrer"
+          ><i class="fab fa-facebook-square"></i
         ></a>
-      </i>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -41,7 +41,6 @@ section {
   align-items: center;
   background: url("../assets/radio.jpg") no-repeat center center;
   background-size: cover;
-  filter: blur(5px);
 }
 
 .card {
@@ -58,5 +57,34 @@ section {
   -webkit-backdrop-filter: blur(15.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  a {
+    color: white;
+    padding: 5px;
+    margin: 10px 20px;
+
+    i {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 90vw;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
 }
 </style>
