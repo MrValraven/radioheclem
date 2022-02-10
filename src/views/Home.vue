@@ -78,7 +78,7 @@ section {
   }
 
   a {
-    color: $fontColor;
+    color: white;
     padding: 5px;
     margin: 10px 50px;
 
